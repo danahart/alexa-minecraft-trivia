@@ -1,0 +1,17 @@
+{
+  "name": "alexa-minecraft",
+  "version": "1.0.0",
+  "description": "Alexa skill to return basic Minecraft trivia.",
+  "main": "index.js",
+  "keywords": [
+    "alexa",
+    "minecraft",
+    "node"
+  ],
+  "author": "Dana Hart",
+  "license": "ISC",
+  "dependencies": {
+    "alexa-sdk": "^1.0.7",
+    "aws-sdk": "^2.32.0"
+  }
+}

@@ -1,0 +1,3 @@
+TriviaIntent    Give me a fact
+TriviaIntent    Tell me a fact
+TriviaIntent    Tell me trivia
