@@ -14,6 +14,9 @@ var startSessionHandlers = {
     'LaunchRequest': function() {
         this.emit(':askWithCard', 'Hello, ask for a Minecraft Trivia fact');
     },
+    'AMAZON.HelpIntent': function() {
+        this.emit(':ask', 'This skill will return a Minecraft Trivia fact. Ask Minecraft Trivia to tell you a fact', 'Ask Minecraft Trivia to tell you a fact.');
+    },
     'AMAZON.StopIntent': function() {
         this.emit(':tell', "Goodbye!");
     },
@@ -27,9 +30,6 @@ var startSessionHandlers = {
 }
 
 var InfoCollectorHandlers = {
-    'StartSession': function() {
-        this.emit('StartSession');
-    },
     'TriviaIntent': function() {
         var randomId = Math.floor(Math.random() * 15)
         var randomFact = facts[randomId]
