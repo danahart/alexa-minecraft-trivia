@@ -11,8 +11,8 @@ exports.handler = function(event, context, callback) {
 };
 
 var startSessionHandlers = {
-    'StartSession': function() {
-        this.emit(':askWithCard', 'Hello, ask for a Minecraft fact');
+    'LaunchRequest': function() {
+        this.emit(':askWithCard', 'Hello, ask for a Minecraft Trivia fact');
     },
     'AMAZON.StopIntent': function() {
         this.emit(':tell', "Goodbye!");
