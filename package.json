@@ -12,6 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "alexa-sdk": "^1.0.7",
-    "aws-sdk": "^2.32.0"
+    "config": "^1.26.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-aws-lambda": "^0.13.0"
   }
 }
